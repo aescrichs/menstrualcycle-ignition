@@ -56,7 +56,7 @@ for cond = 1:3  % cond=1 follicular, cond=2 pre-ovulatory, cond=3 luteal
         for t = T
             for i = 1:N
                 for j = 1:N
-                    phasematrix(i,j) = events(i,t)*events(j,t); % phasematrix(i,j) = events(i,t-9)*events(j,t-9);
+                    phasematrix(i,j) = events(i,t)*events(j,t); 
                 end
             end
             cc = phasematrix; %*Cbin;
